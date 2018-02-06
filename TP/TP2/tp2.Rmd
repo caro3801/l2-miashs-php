@@ -3,12 +3,12 @@ title: "TP2"
 author: "MIA0401V - Web - Initiation à l'écriture de pages dynamiques"
 date: "L2 MIASHS - 2017/2018"
 output:
-  pdf_document: default
   html_document:
     toc: yes
     toc_float:
       collapsed: no
       smooth_scroll: yes
+  pdf_document: default
 ---
 
 #Exercice 1
