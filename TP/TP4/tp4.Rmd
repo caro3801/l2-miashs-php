@@ -1,0 +1,41 @@
+---
+title: "TP4"
+author: "MIA0401V - Web - Initiation à l'écriture de pages dynamiques"
+date: "L2 MIASHS - 2017/2018"
+output:
+  pdf_document: default
+  html_document:
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+---
+
+
+#Exercice 1
+Téléchargez depuis IRIS l'archive `operationsPOST.zip` contenant un formulaire (`choixOperationPOST.html`) et le traitement de ce formulaire (`operationPOST.php`).
+
+Déposez chacun des fichiers sur `mi-phpmut`.
+
+1. Testez ces fichiers en appelant depuis votre navigateur le formulaire HTML.
+2. Complétez le formulaire avec un bouton permettant de réinitialiser le formulaire (i.e. remettre le contenu des champs avec leur valeur initiale).
+3. En utilisant respectivement `choixOperationPOST.html` et `operationPOST.php`, créez les fichiers `choixOperationGET.html` et `operationGET.php`. 
+    a. Modifier ces fichiers pour que la transmission de paramètres entre le formulaire et la page de traitement de ce formulaire, se fasse avec la méthode GET (et non POST). 
+    b. Testez et observer l'URL envoyée au serveur après que vous ayez appuyé sur le bouton de validation : vous devriez voir `nb1=2&nb2=5&op=somme` où `nb1`, `nb2` et `op` sont les noms des champs où vous avez saisi vos données (soient `2`, `5` et `somme` dans l'exemple)
+4. Modifier les fichiers (...POST) pour ajouter le traitement de la multiplication.
+5. A partir du formulaire `choixOperationPOST.html`, créer le formulaire `choixOperationListe.html` pour que les différentes opérations possibles soient présentées dans une liste déroulante.
+
+#Exercice 2 
+
+En utilisant les informations relatives aux Films, Acteurs et Personnes contenues dans votre base de données (le cas échéant reportez-vous au TP précédent) : 
+
+1. Créez une page `choixFilms.html` contenant un formulaire permettant de saisir le genre d'un film.
+2. Créez la page `listeDesFilms.php` qui permettra la réception du genre de film saisi dans le formulaire précédant et affichera en titre de niveau 2 "Les films du genre xxx" où xxx, correspond au genre choisi, puis la liste des films de genre (code, titre).
+3. Améliorez : Si aucun genre n'est saisi dans le formulaire, le titre devient "Tous les films" et tous les films sont affichés (code, titre)
+
+#Exercice 3
+
+1.  Modifiez la page `choixFilms.html` pour que le genre de film soit sélectionné à partir d’une liste d’items constituée à partir du contenu de la base de données. Ceci va nécessiter de faire une requête SQL directement dans la page de formulaire (et donc notamment de renommer cette page en `.php`).
+2. Modifiez la page `choixFilms.php` pour que le premier item de la liste d’items soit "*", i.e. tous les genres. Compléter le fichier `listeDesFilms.php` pour prendre en compte ce nouveau choix possible.
+
+
