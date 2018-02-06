@@ -1,7 +1,7 @@
 ---
 title: "Accueil"
-author: "Caroline Desprat"
-date: "06/02/2018"
+author: "MIA0401V - Web - Initiation à l'écriture de pages dynamiques"
+date: "L2 MIASHS - 2017/2018"
 output: html_document
 ---
 
