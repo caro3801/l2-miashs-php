@@ -1,0 +1,85 @@
+---
+title: "Projet"
+author: "MIA0401V - Web - Initiation à l'écriture de pages dynamiques"
+date: "L2 MIASHS - 2017/2018"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+  pdf_document:
+    toc: yes
+    toc_depth: 2
+---
+
+<img src="logo.jpg" width="40%" style="position:relative;float:right;margin-top:-290px;" />
+
+#Introduction
+
+
+Dans le cadre du projet que vous allez réaliser ce semestre, vous devez concevoir et mettre en place un site Web dynamique permettant de restituer les éléments sur les langages de programmation que vous avez étudiés, ceux vus au 2ème semestre de L2 par exemple (mots clés du langage, exemples de fonctionnalités, notes, liens utiles ...) à l'instar du pense bête HTML que vous avez développé au premier semestre.
+
+Ce projet consiste à revoir et compléter le site Web statique du semestre précédent de telle sorte qu'il puisse offrir un contenu interactif facilement maintenable d’une année à l’autre. L'idée peut être de distinguer les langages vus en L1/L2 ou alors d'enrichir le contenu au fur et à mesure des ans. Au moins une partie du contenu est doit être affiché en fonction de l’utilisateur qui le consulte (par exemple, une partie "administrateur" ou un gestionnaire de "favoris" par utilisateur).
+
+##Organisation
+
+Le projet sera réalisé en binôme (indiquer les noms des participants lors du rendu).
+
+##Évaluation
+
+Vous devrez effectuer sur IRIS deux rendus de votre projet :
+
+  * Un premier rendu est attendu pour le lundi 19 mars avant minuit. Ce rendu devra contenir : une description des objectifs de votre site, un export SQL de votre base de données (structure + données), la version de votre site suite à l'étape 1 (pas de formulaires)
+  * La version finale de votre site est attendue au plus tard pour le dimanche 6 mai minuit (avant les semaines d'examen).
+
+#Étape 1 : Implémentation de la base de données (6 points)
+
+La première étape consiste à revoir le site Web statique développé au 1er semestre pour que les informations relatives aux langages étudiés soient extraites d'une base de données et non pas écrites explicitement dans le code du site.
+
+Dans un premier temps, vous allez vous concentrer sur la structure de la base de données. Il s'agit donc de :
+
+
+  1. Identifier les données à mémoriser et les représenter sous forme d'un schéma Entité-Association. (description conceptuelle de la base) ;
+  2. Traduire ce schéma en relationnel (description logique de la base : les tables) ;
+  3. Créer les tables dans votre base de données MySQL, avec PhpMyAdmin ;
+  4. Insérer des données dans ces tables (jeu d'essai).
+
+
+Dans un deuxième temps, vous devrez modifier les pages de votre site en intégrant des scripts PHP permettant de récupérer et d'afficher les informations stockées dans la base de données. 
+
+
+#Étape 2 : Formulaire d'accès aux données (5 points)
+
+Ensuite, vous devrez intégrer à votre site, une nouvelle page contenant un formulaire permettant de retrouver les informations sur un langage à partir de critères que devra remplir l'internaute.
+
+Pour cela, vous devrez :
+
+  1. Créer une nouvelle page que vous intégrez à votre site.
+  2. Identifier les critères de recherche pertinents.
+  3. Écrire le script PHP permettant d'afficher les informations relatives au langage en fonction des critères renseignés.
+
+
+#Étape 2 bis : Formulaire d'ajout et de modification de données (5 points)
+
+Pour faciliter la gestion des informations sur un langage, il faut pouvoir les ajouter de manière interactive.
+<!-- il faut pouvoir ajouter de manière interactive les différents objets du langages. -->
+
+Pour cela, vous devrez :
+
+  1. Identifier dans les pages HTML les zones d'insertion de données et de modification de données pertinentes.
+  2. Écrire le script PHP permettant d'ajouter les informations dans la base de données.
+  3. Visualiser les nouvelles données.
+
+#Étape 3 : Extension du site (4 points)
+
+Le site sera étendu pour prendre en compte l'authentification d'utilisateurs. Par exemple l'administrateur pourra se connecter pour mettre à jour la base de données (système de contributeurs voire gestion de version d'une page concernant un langage), ou un étudiant pourra avoir un accès personnalisé au contenu du site (langages favoris, nombre de contributions, notes personnelles etc.).
+
+#Étape bonus (2 points)
+
+D'autres idées peuvent être réalisées dans le cadre de ce projet comme par exemple :
+
+  * un jeu du pendu basé sur un mot clé du langage stocké dans la base de données 
+  * ou un système de devinettes basés sur la description de l'élément
+  * ou un quizz sur un langage avec comptage de point au moment de la soumission des réponses...
+  
+  
+
