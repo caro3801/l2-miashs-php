@@ -3,10 +3,10 @@ title: "Projet"
 author: "MIA0401V - Web - Initiation à l'écriture de pages dynamiques"
 date: "L2 MIASHS - 2017/2018"
 output:
-  html_document:
+  pdf_document:
     toc: yes
     toc_depth: 2
-  pdf_document:
+  html_document:
     toc: yes
     toc_depth: 2
 ---
@@ -31,7 +31,7 @@ Vous devrez effectuer sur IRIS deux rendus de votre projet :
   * Un premier rendu est attendu pour le lundi 19 mars avant minuit. Ce rendu devra contenir : une description des objectifs de votre site, un export SQL de votre base de données (structure + données), la version de votre site suite à l'étape 1 (pas de formulaires)
   * La version finale de votre site est attendue au plus tard pour le dimanche 6 mai minuit (avant les semaines d'examen).
 
-#Étape 1 : Implémentation de la base de données (6 points)
+#Étape 1 : Implémentation et exploitation de la base de données (6 points)
 
 La première étape consiste à revoir le site Web statique développé au 1er semestre pour que les informations relatives aux langages étudiés soient extraites d'une base de données et non pas écrites explicitement dans le code du site.
 
@@ -47,9 +47,9 @@ Dans un premier temps, vous allez vous concentrer sur la structure de la base de
 Dans un deuxième temps, vous devrez modifier les pages de votre site en intégrant des scripts PHP permettant de récupérer et d'afficher les informations stockées dans la base de données. 
 
 
-#Étape 2 : Formulaire d'accès aux données (5 points)
+#Étape 2 : Formulaire d'accès et de mise à jour aux données (10 points)
 
-Ensuite, vous devrez intégrer à votre site, une nouvelle page contenant un formulaire permettant de retrouver les informations sur un langage à partir de critères que devra remplir l'internaute.
+Vous devrez intégrer à votre site, une nouvelle page contenant un formulaire permettant de retrouver les informations sur un langage à partir de critères que devra remplir l'internaute (5 points).
 
 Pour cela, vous devrez :
 
@@ -58,9 +58,7 @@ Pour cela, vous devrez :
   3. Écrire le script PHP permettant d'afficher les informations relatives au langage en fonction des critères renseignés.
 
 
-#Étape 2 bis : Formulaire d'ajout et de modification de données (5 points)
-
-Pour faciliter la gestion des informations sur un langage, il faut pouvoir les ajouter de manière interactive.
+Pour faciliter la gestion des informations sur un langage, il faut pouvoir les ajouter de manière interactive. Vous réaliserez donc un formulaire d'ajout et de modification de données (5 points).
 <!-- il faut pouvoir ajouter de manière interactive les différents objets du langages. -->
 
 Pour cela, vous devrez :
@@ -82,4 +80,3 @@ D'autres idées peuvent être réalisées dans le cadre de ce projet comme par e
   * ou un quizz sur un langage avec comptage de point au moment de la soumission des réponses...
   
   
-
