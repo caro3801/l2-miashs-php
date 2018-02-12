@@ -8,6 +8,7 @@ output: html_document
 
 #cours
 
+* Séance 2 ([HTML](Cours/seance2/seance2.html))
 * Séance 3 ([HTML](Cours/seance3/seance3.html))
 
 #tp
