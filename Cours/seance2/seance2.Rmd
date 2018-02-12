@@ -1,0 +1,247 @@
+---
+title: "PHP"
+author: "Caroline Desprat et Catherine Comparot"
+date: "09/02/2018"
+output:
+  ioslides_presentation:
+    css: style.css
+    widescreen: yes
+---
+
+
+# Les opérateurs
+
+##Arithmétiques
+
+| Opérateur | Description |
+|-----------|-------------|
+| `$a + $b`   | Somme de `$a` et `$b`     |
+| `$a - $b`   | Différence de `$a` et `$b`|
+| `$a * $b`   | Produit de `$a` et `$b`   |
+| `$a / $b`   | Division de `$a`et `$b`   |
+| `$a % $b`   | `$a` modulo `$b`          |
+
+
+
+## Opérateurs sur les chaînes de caractères
+
+Opérateur de concaténation : le point `.`
+
+```php
+$a = “Bonjour” ; 
+$b = $a.“le monde!”;	// $b contient “Bonjour le monde!”
+$a = “Bonjour” ; 
+$a = $a.“le monde!”;	// $a contient “Bonjour le monde!”
+
+$b =“bonjour”;
+$b .=“ le monde!”;    // $b contient “bonjour le monde!”
+```
+
+##Opérateurs d'affectation (ou d'assignation)
+
+Opérateur : `=`
+```php
+$a = 3; 		//$a est égal à 3
+$a = ($b=4) + 5;	//$a est égal à 9 et $b vaut 4
+```
+
+Opérateur d'affectation combiné à un autre opérateur : 
+```php
+$a = 3; 		
+$a +=4; 		//$a vaut 7
+```
+
+Incrémentation ou décrémentation : 
+
+```php
+++$a // incrémente $a de 1 puis retourne $a 
+###<b>
+$a++  // retourne $a puis incrémente $a de 1
+###</b>
+```
+
+## Opérateurs de comparaison
+
+| Opérateur | Description |
+|-----------|-------------|
+| `$a == $b`   | `$a` est égal et est de **même type** que `$b`     |
+| `$a != $b`   | `$a` est différent `$b`|
+| `$a < $b`   | `$a` est strictement inférieur à `$b`   |
+| `$a <= $b`   | `$a` est inférieur à `$b`   |
+| `$a > $b`   | `$a` est strictement supérieur à `$b`          |
+| `$a >= $b`   | `$a` est supérieur à `$b`         |
+
+## Opérateur ternaire
+
+```php
+(expr1) ? (expr2) : (expr3) ;
+```
+
+Cette expression renvoie la valeur de l’expression `expr2` si l’expression `expr1` est vraie, sinon l’expression `expr3` si l’expression expr1 est fausse.
+
+```php
+//Exemple opérateur ternaire
+$eleve_admis = ($moyenne >= 10) ? "adm" : "aj"; 
+```
+
+##Opérateurs logiques
+
+| Opérateur | Description |
+|-----------|-------------|
+| `$a and b`, `$a && $b`  | `$a` **ET** `$b`     |
+| `$a or $b`, `$a || $b`   | `$a` **OU** `$b`|
+| `$a xor $b`   | `$a` **OU EXCLUSIF** `$b` *   |
+| `!$a`   | **NON** `$a` |
+
+
+*vrai si `$a` ou `$b` est vrai mais pas les deux en même temps 
+
+#Structures de contrôle
+
+##Test si, sinon si
+Mots clefs: `if (condition){..}`,`elseif (condition){...}`, `else{...}` 
+
+```php
+if ($a > $b) {
+	echo “a est plus grand que b”;
+}
+elseif  ($a == $b) {
+	echo “a est égal à b”;
+}
+else {
+	echo “a est plus petit que b”;
+}
+```
+
+##Switch case
+Mots clefs: `switch($variableATester):`, `case (valeur):`, (`break;`)
+
+<div class="columns-2">
+```php
+switch ($i) {
+	case 0: print “i est égal à 0”;
+		  break;
+	case 1: print “i est égal à 1”;
+		  break;
+	case 2: print “i est égal à 2”;
+		  break;
+}
+```
+<br><br><br>
+```php
+switch ($b) {
+    case "apple":
+        echo "i est une tarte";
+        break;
+    case "bar":
+        echo "i est une barre";
+        break;
+    case "cake":
+        echo "i est un gateau";
+        break;
+}
+```
+</div>
+
+
+##Boucles
+
+<div class="columns-2">
+###Boucle **tant que**
+```php
+$i=1;
+while ($i<=10) //tant que (condition)
+{
+	print $i++;
+}
+```
+<br><br>
+
+###Boucle **faire ... tant que**
+```php
+$i=0;
+do              //faire
+{
+	print $i;
+	$i++;
+} while ($i<10) //tant que (condition)
+```
+</div>
+
+###Boucle **pour** 
+```php
+for ($i=1; $i<=10; $i++) { //pour i allant de 1 à 10 compris, incrémenter i 
+	 print $i;
+}
+```
+
+
+#Les fonctions
+
+##Définition
+La fonction `MaFonction` prend en paramètre n arguments `$arg1, $arg2,…, $argn` et retourne la variable ``retval`
+
+
+```php
+function MaFonction($arg1, $arg2,…, $argn)
+{
+	… // corps de la fonction
+	return $retval;
+}
+```
+
+Mots clés: `function`, `return`
+
+##Exemple
+
+```php
+function dire_texte($texte,$qui) 
+{
+    $msgDire = $texte." ".$qui;
+    return $msgDire ;
+}
+
+$chaine = "L2-UTM2";
+$msg = dire_texte("Bonjour",$chaine);
+echo $msg;
+```
+
+
+##Passage d'argument par valeur
+* Par **liste** de valeurs
+```php
+function liste ($arg1, $arg2){
+        echo "$arg1 + $arg2 = ", $arg1 + $arg2;
+}
+```
+
+* Par **tableau** de valeurs
+```php
+function tableau ($arg){
+        echo "$arg[0]+$arg[1]=”,$arg[0]+$arg[1]";
+}
+```
+
+##Passage d'argument par référence
+La fonction peut changer la valeur des arguments.
+
+Utilisation du symbole `&` devant l'argument `$a` : **&**`$a`
+
+```php
+###<b>
+function reference(&$a)
+###</b>
+{
+	$a .=" et un peu plus!";
+}
+
+$str ="Ceci est une chaîne";
+reference($str);
+echo $str;	// affiche ‘Ceci est une chaine et un peu plus!’
+```
+
+#Mise en pratique
+
+---
+
+Faire les exercices 2, 3 et 4 de la feuille de TP 2
