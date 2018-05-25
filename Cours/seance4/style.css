@@ -1,0 +1,50 @@
+.centered{
+	display:block;
+	margin:auto;
+}
+
+.toprightcorner{
+	position:absolute;
+	top:1em;
+	right:2em;
+	width: 8%;
+}
+
+.medium .prettyprint{
+	font-size: 10pt;
+	line-height:1.5em;
+}
+
+.small .prettyprint{
+	font-size: 8pt;
+	line-height:1.5em;
+}
+
+.slimmer ul{
+	width: 80%;
+}
+
+.smaller{
+	font-size: 10pt;
+}
+
+.exemple {
+	font-size: 12pt;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+
+	border: 1px dotted gray;
+	border-radius: 5px;
+
+	padding: 5px 0px 5px 5px;
+}
+
+.exemple form {
+	margin: 0 auto;
+}
+.exemple form > fieldset {
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+
+}
