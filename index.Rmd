@@ -6,15 +6,18 @@ output: html_document
 ---
 
 
-#cours
+# Cours
 
 * Séance 2 ([HTML](Cours/seance2/seance2.html))
 * Séance 3 ([HTML](Cours/seance3/seance3.html))
+* Séance 4 ([HTML](Cours/seance4/seance4.html))
 
-#tp
+# TP
 
 * TP1 ([HTML](TP/TP1/tp1.html),[PDF](TP/TP1/tp1.pdf))
 * TP2 ([HTML](TP/TP2/tp2.html),[PDF](TP/TP2/tp2.pdf))
 * TP3 ([HTML](TP/TP3/tp3.html),[PDF](TP/TP3/tp3.pdf))
+  * Acteurs.sql ([SQL](TP/TP3/Acteurs.sql))
+  * Cinema.sql ([SQL](TP/TP3/Cinema.sql))
 * TP4 ([HTML](TP/TP4/tp4.html),[PDF](TP/TP4/tp4.pdf))
 * TP5 ([HTML](TP/TP5/tp5.html),[PDF](TP/TP5/tp5.pdf))
