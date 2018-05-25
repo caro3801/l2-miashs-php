@@ -1,0 +1,17 @@
+/*
+ * style.css
+ */
+
+body {
+	background: white;
+	color: black;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+#plat:hover, #plat:active, #plat:focus {
+   font-style: italic; 
+   color: blue;
+}
